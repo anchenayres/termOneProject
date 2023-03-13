@@ -11,6 +11,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { NgImageSliderModule } from 'ng-image-slider';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 
 
@@ -28,7 +29,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     MatToolbarModule,
     BrowserAnimationsModule,
     MatCardModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

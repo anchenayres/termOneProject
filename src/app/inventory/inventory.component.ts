@@ -36,6 +36,16 @@ export class InventoryComponent {
     title: "VSC - The ultimate coding companion",
     author: "Microsoft",
     description: "Discover the ultimate coding companion - explore  of Visual Studio Code with our in-depth review. Elevate your coding experience and streamline your workflow with the power of this versatile editor.",
-},
+  },
+  {
+    title: "VSC - The ultimate coding companion",
+    author: "Microsoft",
+    description: "Discover the ultimate coding companion - explore  of Visual Studio Code with our in-depth review. Elevate your coding experience and streamline your workflow with the power of this versatile editor.",
+  },
+  {
+    title: "VSC - The ultimate coding companion",
+    author: "Microsoft",
+    description: "Discover the ultimate coding companion - explore  of Visual Studio Code with our in-depth review. Elevate your coding experience and streamline your workflow with the power of this versatile editor.",
+  },
   ]
 }
