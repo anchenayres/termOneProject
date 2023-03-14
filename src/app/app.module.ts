@@ -14,6 +14,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {MatButtonModule} from '@angular/material/button';
 import { UpdateComponent } from './update/update.component';
+import {MatStepperModule} from '@angular/material/stepper';
+
 
 
 
@@ -34,7 +36,9 @@ import { UpdateComponent } from './update/update.component';
     MatCardModule,
     NgImageSliderModule,
     ScrollingModule,
-    MatButtonModule
+    MatButtonModule,
+    MatStepperModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

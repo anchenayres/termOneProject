@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'craft', component: CraftComponent},
   {path: 'location', component: LocationComponent},
   {path: 'inventory', component: InventoryComponent},
-  {path: 'update', component: UpdateComponent}
+  {path: 'update', component: UpdateComponent},
 
 ];
 @NgModule({
