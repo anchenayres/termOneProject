@@ -5,6 +5,7 @@ ul, li, a {
     margin: 4vh;
     font-family:Arial, Helvetica, sans-serif;
     position: relative;
+    z-index: 9;
   }
 
 mat-toolbar {

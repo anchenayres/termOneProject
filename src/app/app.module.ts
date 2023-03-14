@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { NgImageSliderModule } from 'ng-image-slider';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import {MatButtonModule} from '@angular/material/button';
+import { UpdateComponent } from './update/update.component';
 
 
 
@@ -21,7 +23,8 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     HomeComponent,
     InventoryComponent,
     LocationComponent,
-    CraftComponent
+    CraftComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
     BrowserAnimationsModule,
     MatCardModule,
     NgImageSliderModule,
-    ScrollingModule
+    ScrollingModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

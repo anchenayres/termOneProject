@@ -33,7 +33,7 @@ h3 {
     background: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
     max-width: 40vh;
-    height: 45vh;
+    height: 50vh;
     margin-left: 3vh;
     padding: 2vh;
     flex: 0 0 100%;
@@ -50,7 +50,6 @@ h3 {
 
 mat-card-title {
     position: relative;
-    margin-left: 2vh;
     margin-bottom: 1vh;
     font-size: 18px;
     font-weight: bold;
@@ -59,12 +58,16 @@ mat-card-title {
 
 mat-card-subtitle {
     position: relative;
-    margin-left: 2vh;
     margin-top: 1vh;
     font-size: 15px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
 
+.updateButton {
+    margin-top: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .homeItems2 {
@@ -85,7 +88,7 @@ mat-card-subtitle {
     background: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
     max-width: 40vh;
-    height: 45vh;
+    height: 50vh;
     margin-left: 3vh;
     padding: 2vh;
     flex: 0 0 100%;
