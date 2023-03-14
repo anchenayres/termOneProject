@@ -6,5 +6,5 @@ import {FormBuilder, Validators} from '@angular/forms';
   styleUrls: ['./craft.component.css']
 })
 export class CraftComponent {
-  
+
 }

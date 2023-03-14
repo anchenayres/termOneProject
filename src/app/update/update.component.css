@@ -1,6 +1,74 @@
-.img1 {
+/* .img1 {
     background-image: cover;
     width: 100%;
     background-color: black;
     opacity: 0.7;
+} */
+
+.block {
+    margin-left: 20vh;
+    margin-top: 10vh;
+    height: 60vh;
+    width: 60vh;
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    display: grid;
+}
+
+mat-card-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+.labelCurrent2 {
+    margin-top: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.labelCurrent {
+    margin-top: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.updateButton {
+    width: 20vh;
+    margin-left: 2vh;
+}
+
+mat-card-subtitle {
+    margin-top: 2vh;
+    margin-left: 2vh;
+
+}
+
+.imageLeft {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: 69vh;
+    width: 65vh;
+    border-radius: 12px;
+}
+
+.items {
+    position: absolute;
+    margin-left: 68vh;
+    height: 35vh;
+    width: 45vh;
+}
+
+.items3 {
+    position: absolute;
+    margin-left: 68vh;
+    height: 35vh;
+    margin-top: 38vh;
+    width: 45vh;
+}
+
+.items2 {
+    position: relative;
 }
