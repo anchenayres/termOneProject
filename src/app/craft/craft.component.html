@@ -1,35 +1,50 @@
 <p>craft works!</p>
 
 <div class="block">
-  <mat-stepper orientation="horizontal">
+  <h2>Recently Blended</h2>
+  <div class="homeItems">
+    <mat-card *ngFor="let item of items" class="items">
+        <img mat-card-image class="imageLeft" [src]="item.image">
+        <mat-card-title>{{item.title}}</mat-card-title>
+        <mat-card-subtitle><strong>Price/Bag:</strong> {{item.price}}</mat-card-subtitle>
+        <mat-card-subtitle><strong>Bag Size:</strong>{{item.size}}</mat-card-subtitle>
+        <mat-card-subtitle><strong>Total Availability:</strong>{{item.availability}}</mat-card-subtitle>
+        <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
+    </mat-card>
+</div>
+
+</div>
+
+<div class="block2">
+  <mat-stepper orientation="vertical">
     <mat-step>
       <ng-template matStepLabel>Step 1</ng-template>
       <ng-template matStepContent>
-        <p>Type of Roast </p>
+        <p>Pick the location where you want to create a new blend</p>
         <button mat-button matStepperNext>Next</button>
       </ng-template>
     </mat-step>
     <mat-step>
       <ng-template matStepLabel>Step 2</ng-template>
       <ng-template matStepContent>
-        <p>Bean Selection 1</p>
+        <p>Pick your base bean</p>
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </ng-template>
     </mat-step>
     <mat-step>
       <ng-template matStepLabel>Step 3</ng-template>
-      <p>Bean Selection 2</p>
+      <p>Measure out the base bean (g)</p>
       <button mat-button matStepperPrevious>Back</button>
     </mat-step>
     <mat-step>
         <ng-template matStepLabel>Step 4</ng-template>
-        <p>Bean Selection 2</p>
+        <p>Pick your second bean</p>
         <button mat-button matStepperPrevious>Back</button>
       </mat-step>
       <mat-step>
         <ng-template matStepLabel>Step 5</ng-template>
-        <p>Bean Selection 2</p>
+        <p>Measure out the second bean (g)</p>
         <button mat-button matStepperPrevious>Back</button>
       </mat-step>
       <mat-step>

@@ -6,12 +6,88 @@
 
 
 .block {
-    margin-left: 5vh;
+    margin-left: 10vh;
     margin-top: 10vh;
     height: 80vh;
-    width: 180vh;
+    width: 80vh;
     position: absolute;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
     display: grid;
+}
+
+h2 {
+    color: red;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    font-size: 2.5vh;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+.block2 {
+    margin-right: 10vh;
+    margin-top: 10vh;
+    height: 80vh;
+    width: 80vh;
+    float: right;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    display: grid;
+}
+
+.homeItems {
+    width: 80vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    position: relative;
+    margin-top: -20vh;
+}
+.items {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    max-width: 25vh;
+    height: 50vh;
+    margin-left: 3vh;
+    padding: 2vh;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+.imageLeft {
+    height: 20vh;
+    width: 20vh;
+    background-color: red;
+    position: relative;
+}
+
+mat-card-title {
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+mat-card-subtitle {
+    position: relative;
+    margin-top: 1vh;
+    font-size: 12px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.updateButton {
+    margin-top: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
