@@ -13,49 +13,20 @@
             <mat-card-actions>
                 <mat-form-field class="availableInput">
                     <mat-label>Availability</mat-label>
-                    <input type="number" matInput
+                    <input matInput type="number" 
                         color="accent"
                         placeholder="0"
                         [value]="item.availability"
                         (change)="detectAmountChange($event)">
                 </mat-form-field>
                 <button mat-raised-button class="updateButton" (click)="updateAmount(i)">Update</button>
+                <button mat-raised-button  class="deleteButton" (click)="removeItem(i)">Delete</button>
+
             </mat-card-actions>
-
-
-            <!-- <button mat-raised-button routerLink="/update" class="updateButton">Update</button> -->
-            <button mat-raised-button  color="secondary" (click)="removeItem(i)">Delete</button>
-
-
-
-
-
         </mat-card>
     </div>
-
-            <!-- ADD A NEW ITEM -->
-            <form [formGroup]="newItem" (ngSubmit)="createItem()">
-
-                <label for="image">Image URL</label>
-                <input id="image" type="text" formControlName="image"/>
-
-                <label for="title">Item Name</label>
-                <input id="title" type="text" formControlName="title"/>
-
-                <label for="category">category</label>
-                <input id="category" type="text" formControlName="category"/>
-
-                <label for="description">description</label>
-                <input id="description" type="text" formControlName="description"/>
-
-                <label for="availability">starting amount</label>
-                <input id="availability" type="number" readonly formControlName="availability"/>
-
-
-                <input type="submit"/>
-            </form>
-
-    <!-- <h3>Medium / Light Roasts</h3>
+    
+    <h3>Medium / Light Roasts</h3>
 
     <div class="homeItems2">
         <mat-card *ngFor="let item of items" class="items2">
@@ -99,7 +70,39 @@
             <mat-card-subtitle><strong></strong>{{item.availability}}</mat-card-subtitle>
             <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
         </mat-card>
-    </div> -->
+    </div>
+
+
+
+
+
+
+        <mat-card class="addItem">
+            <h4>Add a new single origin to your list:</h4>
+
+            <!-- ADD A NEW ITEM -->
+            <form [formGroup]="newItem" (ngSubmit)="createItem()">
+
+                <label for="image">Image URL</label>
+                <input id="image" type="text" formControlName="image"/>
+
+                <label for="title">Item Name</label>
+                <input id="title" type="text" formControlName="title"/>
+
+                <label for="category">category</label>
+                <input id="category" type="text" formControlName="category"/>
+
+                <label for="description">description</label>
+                <input id="description" type="text" formControlName="description"/>
+
+                <label for="availability">starting amount</label>
+                <input id="availability" type="number" readonly formControlName="availability"/>
+
+
+                <input class="submitButton" type="submit"/>
+            </form>
+        </mat-card>
+
 
 
 

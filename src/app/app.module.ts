@@ -6,15 +6,18 @@ import { HomeComponent } from './home/home.component';
 import { CraftComponent } from './craft/craft.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { LocationComponent } from './location/location.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatToolbarModule} from '@angular/material/toolbar';
+import { MatButtonModule} from '@angular/material/button';
+import { MatStepperModule} from '@angular/material/stepper';
+import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatCardModule} from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgImageSliderModule } from 'ng-image-slider';
-import {ScrollingModule} from '@angular/cdk/scrolling';
-import {MatButtonModule} from '@angular/material/button';
-import {UpdateComponent } from './update/update.component';
-import {MatStepperModule} from '@angular/material/stepper';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { ScrollingModule} from '@angular/cdk/scrolling';
+import { UpdateComponent } from './update/update.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -41,6 +44,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatStepperModule,
     MatFormFieldModule,
     ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
