@@ -7,12 +7,37 @@
         <mat-card *ngFor="let item of items" class="items">
             <img mat-card-image class="imageLeft" [src]="item.image">
             <mat-card-title>{{item.title}}</mat-card-title>
-            <mat-card-subtitle><strong>Total Availability:</strong>{{item.availability}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Catergory:</strong>{{item.category}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Description:</strong>{{item.description}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Total Availability: </strong>{{item.availability}}</mat-card-subtitle>
             <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
+
         </mat-card>
     </div>
 
-    <h3>Medium / Light Roasts</h3>
+            <!-- ADD A NEW ITEM -->
+            <form [formGroup]="newItem" (ngSubmit)="createItem()">
+
+                <label for="image">Image URL</label>
+                <input id="image" type="text" formControlName="image"/>
+
+                <label for="title">Item Name</label>
+                <input id="title" type="text" formControlName="title"/>
+
+                <label for="category">category</label>
+                <input id="category" type="text" formControlName="category"/>
+
+                <label for="description">description</label>
+                <input id="description" type="text" formControlName="description"/>
+
+                <label for="availability">starting amount</label>
+                <input id="availability" type="number" readonly formControlName="availability"/>
+
+
+                <input type="submit"/>
+            </form>
+
+    <!-- <h3>Medium / Light Roasts</h3>
 
     <div class="homeItems2">
         <mat-card *ngFor="let item of items" class="items2">
@@ -40,6 +65,8 @@
         <mat-card *ngFor="let item of items" class="items2">
             <img mat-card-image class="imageLeft" [src]="item.image">
             <mat-card-title>{{item.title}}</mat-card-title>
+            <mat-card-subtitle><strong>Catergory:</strong>{{item.category}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Description:</strong>{{item.description}}</mat-card-subtitle>
             <mat-card-subtitle><strong>Total Availability:</strong>{{item.availability}}</mat-card-subtitle>
             <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
         </mat-card>
@@ -54,7 +81,7 @@
             <mat-card-subtitle><strong></strong>{{item.availability}}</mat-card-subtitle>
             <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
         </mat-card>
-    </div>
+    </div> -->
 
 
 

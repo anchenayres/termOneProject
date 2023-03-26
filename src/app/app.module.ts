@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -9,13 +8,14 @@ import { InventoryComponent } from './inventory/inventory.component';
 import { LocationComponent } from './location/location.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule} from '@angular/material/card';
 import { NgImageSliderModule } from 'ng-image-slider';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {MatButtonModule} from '@angular/material/button';
-import { UpdateComponent } from './update/update.component';
+import {UpdateComponent } from './update/update.component';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -39,7 +39,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ScrollingModule,
     MatButtonModule,
     MatStepperModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
