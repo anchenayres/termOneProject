@@ -4,6 +4,8 @@ input {
     width: 150px;
 }
 
+
+
 input[type=submit]{
     background-color: black;
     color: white;
@@ -45,7 +47,6 @@ h3 {
 }
 
 .homeItems {
-    /* width: 190vh; */
     width: 120vh;
     display: flex;
     flex-direction: row;
@@ -60,7 +61,7 @@ h3 {
 .addItem {
     /* width: 190vh; */
     width: 70vh;
-    margin-top: -323vh;
+    margin-top: -343vh;
     display: flex;
     height: 58vh;
     flex-direction:column;
@@ -70,7 +71,7 @@ h3 {
 }
 
 h4 {
-    margin: 2vh;
+    margin-top: 2vh;
 }
 form input{
     margin-top: 2vh;
@@ -152,7 +153,7 @@ mat-card-subtitle {
 
 
 .homeItems2 {
-    width: 190vh;
+    width: 195vh;
     display: flex;
     flex-direction: row;
     margin-top: 14vh;
