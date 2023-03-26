@@ -11,6 +11,8 @@ import { Item } from '../models/item';
 export class InventoryComponent {
   //properties
   items: Item[] = []
+
+
   newItem = new FormGroup({
     image: new FormControl(''),
     title: new FormControl(''),
@@ -30,14 +32,21 @@ export class InventoryComponent {
       title: "Testing",
       category: "My item category",
       description: "describe the item",
-      availability: 2
+      availability: 20
     },
     {
       image: "https://cdn.shopify.com/s/files/1/0280/5548/products/Legado-Kenya-Kiamabara-Peaberry-250g_1024x1024.jpg?v=1664978064",
       title: "YES",
       category: "My item category",
       description: "describe the item",
-      availability: 2
+      availability: 65
+    },
+    {
+      image: "https://cdn.shopify.com/s/files/1/0280/5548/products/Legado-Kenya-Kiamabara-Peaberry-250g_1024x1024.jpg?v=1664978064",
+      title: "YES",
+      category: "My item category",
+      description: "describe the item",
+      availability: 98
     },
     );
   }
@@ -57,7 +66,27 @@ createItem(){
   this.items.push(newthing)
 }
 
-//UPDATE
+  //UPDATE
 
-//DELETE
+  newAmountPlaceholder: number = 0
+
+  detectAmountChange(e: any) {
+    this.newAmountPlaceholder = +e.target.value
+  }
+
+  updateAmount(index: number) {
+    console.log(this.newAmountPlaceholder);
+
+    this.items[index].availability = this.newAmountPlaceholder
+
+    console.log(this.items[index])
+
+  }
+
+  //DELETE
+  removeItem(index: number) {
+    this.items.splice(index, 1)
+  }
+
+
 }

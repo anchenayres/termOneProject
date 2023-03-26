@@ -4,13 +4,31 @@
     <h2>Light Roasts</h2>
 
     <div class="homeItems">
-        <mat-card *ngFor="let item of items" class="items">
+        <mat-card *ngFor="let item of items; let i=index" class="items">
             <img mat-card-image class="imageLeft" [src]="item.image">
             <mat-card-title>{{item.title}}</mat-card-title>
             <mat-card-subtitle><strong>Catergory:</strong>{{item.category}}</mat-card-subtitle>
             <mat-card-subtitle><strong>Description:</strong>{{item.description}}</mat-card-subtitle>
-            <mat-card-subtitle><strong>Total Availability: </strong>{{item.availability}}</mat-card-subtitle>
-            <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
+
+            <mat-card-actions>
+                <mat-form-field class="availableInput">
+                    <mat-label>Availability</mat-label>
+                    <input type="number" matInput
+                        color="accent"
+                        placeholder="0"
+                        [value]="item.availability"
+                        (change)="detectAmountChange($event)">
+                </mat-form-field>
+                <button mat-raised-button class="updateButton" (click)="updateAmount(i)">Update</button>
+            </mat-card-actions>
+
+
+            <!-- <button mat-raised-button routerLink="/update" class="updateButton">Update</button> -->
+            <button mat-raised-button  color="secondary" (click)="removeItem(i)">Delete</button>
+
+
+
+
 
         </mat-card>
     </div>
