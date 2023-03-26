@@ -27,7 +27,7 @@ h3 {
 }
 
 .homeItems {
-    width: 180vh;
+    width: 190vh;
     display: flex;
     flex-direction: row;
     margin-top: 28vh;
@@ -82,7 +82,7 @@ mat-card-subtitle {
 }
 
 .homeItems2 {
-    width: 180vh;
+    width: 190vh;
     display: flex;
     flex-direction: row;
     margin-top: 14vh;

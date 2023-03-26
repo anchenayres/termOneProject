@@ -1,1 +1,45 @@
-<p>location works!</p>
+<p>Location works!</p>
+
+    <h1>Single Origins</h1>
+    <h2>America</h2>
+
+    <div class="homeItems">
+        <mat-card *ngFor="let item of america" class="items">
+            <img mat-card-image class="imageLeft" [src]="item.image">
+            <mat-card-title>{{item.title}}</mat-card-title>
+            <mat-card-subtitle><strong>Price:</strong> {{item.price}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Quantity:</strong>{{item.size}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Total Availability:</strong>{{item.availability}}</mat-card-subtitle>
+            <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
+        </mat-card>
+    </div>
+
+    <!-- <h3>Africa</h3>
+
+    <div class="homeItems2">
+        <mat-card *ngFor="let item of items" class="items2">
+            <img mat-card-image class="imageLeft" [src]="item.image">
+            <mat-card-title>{{item.title}}</mat-card-title>
+            <mat-card-subtitle><strong>Price/Bag:</strong>{{item.price}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Bag Size:</strong>{{item.size}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Total Availability:</strong>{{item.availability}}</mat-card-subtitle>
+            <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
+        </mat-card>
+    </div>
+
+    <h3>Asia</h3>
+
+    <div class="homeItems2">
+        <mat-card *ngFor="let item of items" class="items2">
+            <img mat-card-image class="imageLeft" [src]="item.image">
+            <mat-card-title>{{item.title}}</mat-card-title>
+            <mat-card-subtitle><strong>Price/Bag:</strong>{{item.price}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Bag Size:</strong>{{item.size}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Total Availability:</strong>{{item.availability}}</mat-card-subtitle>
+            <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
+        </mat-card>
+    </div> -->
+
+
+
+
