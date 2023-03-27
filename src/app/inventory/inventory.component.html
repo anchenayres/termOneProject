@@ -20,7 +20,7 @@
                         (change)="detectAmountChange($event)">
                 </mat-form-field>
                 <button mat-raised-button class="updateButton" (click)="updateAmount(item._id!)">Update</button>
-                <button mat-raised-button  class="deleteButton" (click)="removeItem(i)">Delete</button>
+                <button mat-raised-button  class="deleteButton" (click)="removeItem(item._id!, i)">Delete</button>
 
             </mat-card-actions>
         </mat-card>
@@ -45,7 +45,7 @@
                         (change)="detectAmountChange($event)">
                 </mat-form-field>
                 <button mat-raised-button class="updateButton" (click)="updateAmount(item._id!)">Update</button>
-                <button mat-raised-button  class="deleteButton" (click)="removeItem(i)">Delete</button>
+                <button mat-raised-button  class="deleteButton" (click)="removeItem(item._id!, i)">Delete</button>
 
             </mat-card-actions>
         </mat-card>
@@ -70,7 +70,7 @@
                         (change)="detectAmountChange($event)">
                 </mat-form-field>
                 <button mat-raised-button class="updateButton" (click)="updateAmount(item._id!)">Update</button>
-                <button mat-raised-button  class="deleteButton" (click)="removeItem(i)">Delete</button>
+                <button mat-raised-button  class="deleteButton" (click)="removeItem(item._id!, i)">Delete</button>
 
             </mat-card-actions>
         </mat-card>
@@ -95,7 +95,7 @@
                         (change)="detectAmountChange($event)">
                 </mat-form-field>
                 <button mat-raised-button class="updateButton" (click)="updateAmount(item._id!)">Update</button>
-                <button mat-raised-button  class="deleteButton" (click)="removeItem(i)">Delete</button>
+                <button mat-raised-button  class="deleteButton" (click)="removeItem(item._id!, i)">Delete</button>
 
             </mat-card-actions>
         </mat-card>
@@ -120,7 +120,7 @@
                         (change)="detectAmountChange($event)">
                 </mat-form-field>
                 <button mat-raised-button class="updateButton" (click)="updateAmount(item._id!)">Update</button>
-                <button mat-raised-button  class="deleteButton" (click)="removeItem(i)">Delete</button>
+                <button mat-raised-button  class="deleteButton" (click)="removeItem(item._id!, i)">Delete</button>
 
             </mat-card-actions>
         </mat-card>

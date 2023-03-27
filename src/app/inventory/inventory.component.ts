@@ -16,7 +16,6 @@ export class InventoryComponent {
 
   }
 
-
   //properties
   items: Item[] = []
 
@@ -71,7 +70,8 @@ createItem(){
   }
 
   //DELETE
-  removeItem(index: number) {
-    this.itemService.removeItem(index);
+  removeItem(id: string, index: number) {
+    this.itemService.removeItem(id).subscribe();
+    this.items.splice(index, 1);
   }
 }

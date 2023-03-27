@@ -21,14 +21,15 @@ export class ItemdbService {
    
   }
 
-  //CREATE
-  createNewItem(item: Item): Observable<Item> {
-    return this.http.post<Item>(this.url, item)
-  }
+    //CREATE
+    createNewItem(item: Item): Observable<Item> {
+      return this.http.post<Item>(this.url, item)
+    }
 
     //DELETE
-    removeItem(index: number) {
-      this.items.splice(index, 1);
+    removeItem(id: string): Observable<unknown> {
+      return this.http.delete(`${this.url}/${id}`)
+      // this.items.splice(index, 1);
     }
   
     //UPDATE
