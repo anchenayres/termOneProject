@@ -23,6 +23,7 @@ export class InventoryComponent {
     image: new FormControl(''),
     title: new FormControl(''),
     category: new FormControl(''),
+    roast: new FormControl(''),
     description: new FormControl(''),
     availability: new FormControl(20)
   })
