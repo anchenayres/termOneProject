@@ -20,6 +20,8 @@ import { ScrollingModule} from '@angular/cdk/scrolling';
 import { UpdateComponent } from './update/update.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import {MatDialogModule} from '@angular/material/dialog';
+
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -47,7 +49,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatStepperModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

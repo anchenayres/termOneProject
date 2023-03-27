@@ -13,10 +13,6 @@ input[type=submit]{
     width: 150px;
 }
 
-/* .availableInput {
-    background-color: red;
-    width: 20vh;
-} */
 
 h1 {
     color: rgb(0, 0, 0);
@@ -46,8 +42,9 @@ h3 {
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.homeItems {
-    width: 120vh;
+/* .homeItems {
+    width: 190vh;
+    height: 190vh;
     display: flex;
     flex-direction: row;
     margin-top: 28vh;
@@ -56,12 +53,42 @@ h3 {
     scroll-snap-type: x mandatory;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+} */
+
+.homeItems {
+    width: 190vh;
+    height: 190vh;
+    display: flex;
+    overflow:scroll;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 28vh;
+    margin-left: 9vh;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
 }
+
+.items {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    max-width: 30vh;
+    height: 70vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    padding: 2vh;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+
 
 .addItem {
     /* width: 190vh; */
     width: 70vh;
-    margin-top: -343vh;
     display: flex;
     height: 58vh;
     flex-direction:column;
@@ -92,18 +119,6 @@ form label {
     margin-left: 20vh;
 }
 
-.items {
-    background: rgb(255, 255, 255);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-    max-width: 30vh;
-    height: 55vh;
-    margin-left: 3vh;
-    padding: 2vh;
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    transition: all 0.2s;
-}
-
 mat-form-field input{
     height: 2vh;
 }
@@ -114,7 +129,7 @@ mat-form-field {
 }
 
 .updateButton {
-    margin-top: 15vh;
+    margin-top: 20vh;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
 }
@@ -122,11 +137,12 @@ mat-form-field {
 .deleteButton {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    margin-top: 15vh;
+    margin-top: 20vh;
     margin-left: 13vh;
 }
 .imageLeft {
     height: 20vh;
+    margin-left: 3vh;
     width: 20vh;
     background-color: red;
     position: relative;
@@ -138,6 +154,7 @@ mat-card-title {
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
+    margin-top: 2vh;
 }
 
 mat-card-subtitle {
@@ -152,7 +169,7 @@ mat-card-subtitle {
 
 
 
-.homeItems2 {
+/* .homeItems2 {
     width: 195vh;
     display: flex;
     flex-direction: row;
@@ -164,9 +181,9 @@ mat-card-subtitle {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
   
     
-}
+} */
 
-.items2 {
+/* .items2 {
     background: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
     max-width: 25vh;
@@ -176,7 +193,7 @@ mat-card-subtitle {
     flex: 0 0 100%;
     scroll-snap-align: start;
     transition: all 0.2s;
-}
+} */
 
 
 
