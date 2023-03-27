@@ -52,23 +52,18 @@ createItem(){
 
   newAmountPlaceholder: number = 0
 
+  //front end - detect input change
   detectAmountChange(e: any) {
     this.newAmountPlaceholder = +e.target.value
   }
 
+  //beackend to call our service
   updateAmount(index: number) {
-    console.log(this.newAmountPlaceholder);
-
-    this.items[index].availability = this.newAmountPlaceholder
-
-    console.log(this.items[index])
-
+    this.itemService.updateAmount(index, this.newAmountPlaceholder)
   }
 
   //DELETE
   removeItem(index: number) {
-    this.items.splice(index, 1)
+    this.itemService.removeItem(index);
   }
-
-
 }

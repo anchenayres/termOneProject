@@ -43,4 +43,19 @@ export class ItemdbService {
   createNewItem(item: Item) {
     this.items.push(item);
   }
+
+    //DELETE
+    removeItem(index: number) {
+      this.items.splice(index, 1);
+    }
+  
+    //UPDATE
+    updateAmount(index: number, newAmount: number) {
+      // console.log(newAmount);  
+      this.items[index].availability = newAmount
+      console.log(this.items[index])
+    }
+  
+
+   
 }
