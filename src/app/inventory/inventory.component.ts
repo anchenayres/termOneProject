@@ -38,7 +38,6 @@ export class InventoryComponent {
   }
 
 //CREATE
-
 createItem(){
   console.log(this.newItem.value)
 
@@ -50,7 +49,9 @@ createItem(){
     availability: this.newItem.value.availability!,
   }
 
-  this.itemService.createNewItem(addItem);
+  this.itemService.createNewItem(addItem).subscribe((item) => {
+    this.items.push(item)
+  });
 }
 
   //UPDATE
@@ -63,8 +64,10 @@ createItem(){
   }
 
   //beackend to call our service
-  updateAmount(index: number) {
-    this.itemService.updateAmount(index, this.newAmountPlaceholder)
+  updateAmount(id: string) {
+    this.itemService.updateAmount(id, this.newAmountPlaceholder).subscribe((item) => {
+      console.log(item.availability)
+    })
   }
 
   //DELETE

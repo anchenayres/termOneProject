@@ -22,8 +22,8 @@ export class ItemdbService {
   }
 
   //CREATE
-  createNewItem(item: Item) {
-    this.items.push(item);
+  createNewItem(item: Item): Observable<Item> {
+    return this.http.post<Item>(this.url, item)
   }
 
     //DELETE
@@ -32,10 +32,9 @@ export class ItemdbService {
     }
   
     //UPDATE
-    updateAmount(index: number, newAmount: number) {
-      // console.log(newAmount);  
-      this.items[index].availability = newAmount
-      console.log(this.items[index])
+    updateAmount(id: string, newAmount: number): Observable<Item> {
+      return this.http.put<Item>(`${this.url}/${id}`, {availability: newAmount})
+
     }
   
 
