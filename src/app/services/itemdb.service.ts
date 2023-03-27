@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Item } from '../models/item';
+import { Observable } from 'rxjs';
 
 //this makes it a service
 @Injectable({
@@ -10,36 +11,14 @@ export class ItemdbService {
 
   constructor(private http: HttpClient) { }
 
-  httpUrl: string = "http://localhost:3000/inventory"
+  url: string = "http://localhost:3000/inventory"
 
   items: Item[] = []
 
   //READ
-  getAllItems(): Item[] {
-    //CALL HTTP TO BACKEND SERVER
-    this.items.push({
-      image: "https://cdn.shopify.com/s/files/1/0280/5548/products/Legado-Kenya-Kiamabara-Peaberry-250g_1024x1024.jpg?v=1664978064",
-      title: "Testing",
-      category: "My item category",
-      description: "describe the item",
-      availability: 20
-    },
-    {
-      image: "https://cdn.shopify.com/s/files/1/0280/5548/products/Legado-Kenya-Kiamabara-Peaberry-250g_1024x1024.jpg?v=1664978064",
-      title: "YES",
-      category: "My item category",
-      description: "describe the item",
-      availability: 65
-    },
-    {
-      image: "https://cdn.shopify.com/s/files/1/0280/5548/products/Legado-Kenya-Kiamabara-Peaberry-250g_1024x1024.jpg?v=1664978064",
-      title: "YES",
-      category: "My item category",
-      description: "describe the item",
-      availability: 98
-    },
-    );
-    return this.items
+  getAllItems(): Observable<Item[]> {
+    return this.http.get<Item[]>(this.url)
+   
   }
 
   //CREATE

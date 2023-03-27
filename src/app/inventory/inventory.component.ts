@@ -29,7 +29,12 @@ export class InventoryComponent {
   })
 
   ngOnInit() {
-   this.items = this.itemService.getAllItems()
+    this.itemService.getAllItems().subscribe((data) => {
+      console.log(data);
+      this.items = data
+    })
+
+    //this.items = this.itemService.getAllItems()
   }
 
 //CREATE
