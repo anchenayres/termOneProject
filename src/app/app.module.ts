@@ -20,6 +20,8 @@ import { ScrollingModule} from '@angular/cdk/scrolling';
 import { UpdateComponent } from './update/update.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -34,9 +36,10 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
     MatToolbarModule,
-    BrowserAnimationsModule,
     MatCardModule,
     NgImageSliderModule,
     ScrollingModule,

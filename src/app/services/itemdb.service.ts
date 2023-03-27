@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Item } from '../models/item';
 
@@ -7,7 +8,9 @@ import { Item } from '../models/item';
 })
 export class ItemdbService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  httpUrl: string = "http://localhost:3000/inventory"
 
   items: Item[] = []
 
