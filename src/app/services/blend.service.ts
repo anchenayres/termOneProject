@@ -15,4 +15,9 @@ export class BlendService {
   getAllBlends() {
     return this.http.get<Blend[]>(this.url);
   }
+
+  //method to blend recipe
+  blendRecipe(blendId: string) {
+    return this.http.post<any>(`${this.url}/craft`, {blendId})
+  }
 }

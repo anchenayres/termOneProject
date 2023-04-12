@@ -25,6 +25,8 @@ export class CraftComponent {
 
   listOfBlends: Blend[] = [];
 
+  isBlending = false //preloader
+
   checkVerification() {
     // this.verify.checkVerification(this.username.value!, this.password.value!).subscribe((response) =>{
     //   if(response.success) {
@@ -48,7 +50,15 @@ export class CraftComponent {
     this.getBlend()
   }
 
-
+  blendRecipe(blendId: string) {
+    this.isBlending = true
+    this.blend.blendRecipe(blendId).subscribe((response) => {
+      this.isBlending = false
+      if(response.success == "success") {
+        this.getBlend();
+      }
+    })
+  }
 
 
 //   items=[
