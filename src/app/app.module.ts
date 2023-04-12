@@ -13,6 +13,7 @@ import { MatStepperModule} from '@angular/material/stepper';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatCardModule} from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
+import { FormControl } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgImageSliderModule } from 'ng-image-slider';
@@ -50,7 +51,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    FormControl,
   ],
   providers: [],
   bootstrap: [AppComponent]
