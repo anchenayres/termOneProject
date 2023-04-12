@@ -29,7 +29,7 @@
         <span>({{ingredients.inventoryId.availability}}g available)</span>
         </mat-card-subtitle>
 
-        <mat-card-subtitle><strong>{{blend.availability}}</strong></mat-card-subtitle>
+        <mat-card-subtitle><strong>Current Amount (g): {{blend.availability}}</strong></mat-card-subtitle>
         <button *ngIf="blend.craftable" mat-raised-button color="accent" class="updateButton">Blend</button>
         <button *ngIf="!blend.craftable" mat-raised-button color="disabled" class="updateButton">Missing Ingredients</button>
 
