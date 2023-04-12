@@ -5,7 +5,8 @@ export interface Blend {
     category: string,
     description: string,
     availability: number,
-    ingredients: any[]
+    ingredients: any[],
+    craftable?: boolean
 }
 
 

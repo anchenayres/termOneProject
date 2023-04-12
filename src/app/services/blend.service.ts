@@ -9,7 +9,7 @@ export class BlendService {
 
   constructor(private http: HttpClient) { }
 
-  url = "http://localhost:3000/blends"
+  url = "http://localhost:3000/blend"
 
   //function to get all of my blends
   getAllBlends() {

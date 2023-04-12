@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 // import {FormBuilder, Validators} from '@angular/forms';
 import { FormControl, FormGroup } from '@angular/forms';
 import { VerifyService } from '../services/verify.service';
+import { BlendService } from '../services/blend.service';
+import { Blend } from '../models/blend';
+
 
 @Component({
   selector: 'app-craft',
@@ -11,7 +14,7 @@ import { VerifyService } from '../services/verify.service';
 
 export class CraftComponent {
 
-  constructor (private verify: VerifyService) {}
+  constructor (private verify: VerifyService, private blend: BlendService) {}
 
   //is our user verified
   isVerified = false;
@@ -20,18 +23,32 @@ export class CraftComponent {
   username = new FormControl("");
   password = new FormControl("");
 
+  listOfBlends: Blend[] = [];
+
   checkVerification() {
-    this.verify.checkVerification(this.username.value!, this.password.value!).subscribe((response) =>{
-      if(response.success) {
-        //optional: store the JWT in storage
-        console.log("login Verified Successfully!")
-        this.isVerified = true;
-      } else {
-        console.log("Error has occured");
-        this.isVerified = false;
-      }
+    // this.verify.checkVerification(this.username.value!, this.password.value!).subscribe((response) =>{
+    //   if(response.success) {
+    //     //optional: store the JWT in storage
+    //     console.log("login Verified Successfully!")
+    //     this.isVerified = true;
+    //   } else {
+    //     console.log("Error has occured");
+    //     this.isVerified = false;
+    //   }
+    // })
+  }
+
+  getBlend() {
+    this.blend.getAllBlends().subscribe((data) => {
+      this.listOfBlends = data
     })
   }
+
+  ngOnInit() {
+    this.getBlend()
+  }
+
+
 
 
 //   items=[
