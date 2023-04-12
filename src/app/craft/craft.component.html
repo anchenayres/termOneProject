@@ -5,9 +5,9 @@
 <div>
   <p>Please verify yourself as a crafting user: </p>
 
-  <input  placeholder="username" type="text"/>
-  <input  placeholder="password" type="password"/>
-  <button (click)="checkVerification()" >Verify</button>
+  <input  [formControl]="username" placeholder="username" type="text"/>
+  <input  [formControl]="password" placeholder="password" type="password"/>
+  <button (click)="checkVerification()">Verify</button>
 </div>
 <!--craft section is already verified-->
 

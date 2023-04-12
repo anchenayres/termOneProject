@@ -19,6 +19,7 @@ export class CraftComponent {
   checkVerification() {
     this.verify.checkVerification(this.username.value!, this.password.value!).subscribe((response) =>{
       if(response.success) {
+        //optional: store the JWT in storage
         console.log("login Verified Successfully!")
       } else {
         console.log("Error has occured");
