@@ -4,6 +4,17 @@
 
 } */
 
+.auth {
+    color: red;
+    position: relative;
+    margin-top: 10vh;
+
+}
+p {
+    color: red;
+    position: relative;
+    margin-top: 10vh;
+}
 
 .block {
     margin-left: 10vh;

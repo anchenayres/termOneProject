@@ -2,23 +2,24 @@
 
 <!--first need to verify -->
 
-<div>
+<div appAuthOnly [isVerified]="!isVerified">
   <p>Please verify yourself as a crafting user: </p>
-
   <input  [formControl]="username" placeholder="username" type="text"/>
   <input  [formControl]="password" placeholder="password" type="password"/>
   <button (click)="checkVerification()">Verify</button>
 </div>
 
-<div>
-  <p>WELCOME {{username.value | uppercase}}</p>
+<div appAuthOnly [isVerified]="!isVerified">
+  <h3>Hi {{username.value}} </h3>
+  <p>Crafting Section</p>
 </div>
-<!--craft section is already verified-->
 
 
-<div class="block">
+
+
+<!-- <div class="block">
   <h2>Recently Blended</h2>
-  <div class="homeItems">
+  <div class="homeItems"> -->
     <!-- <mat-card *ngFor="let item of items" class="items">
         <img mat-card-image class="imageLeft" [src]="item.image">
         <mat-card-title>{{item.title}}</mat-card-title>
@@ -27,11 +28,11 @@
         <mat-card-subtitle><strong>Total Availability:</strong>{{item.availability}}</mat-card-subtitle>
         <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
     </mat-card> -->
-</div>
+<!-- </div>
 
-</div>
+</div> -->
 
-<div class="block2">
+<!-- <div class="block2"> -->
   <!-- <mat-stepper orientation="vertical">
     <mat-step>
       <ng-template matStepLabel>Step 1</ng-template>
@@ -69,4 +70,4 @@
         <button mat-button matStepperPrevious>Back</button>
       </mat-step>
   </mat-stepper> -->
-</div>
+<!-- </div> -->

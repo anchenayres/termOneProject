@@ -13,6 +13,10 @@ export class CraftComponent {
 
   constructor (private verify: VerifyService) {}
 
+  //is our user verified
+  isVerified = false;
+
+  //form controls
   username = new FormControl("");
   password = new FormControl("");
 
@@ -21,8 +25,10 @@ export class CraftComponent {
       if(response.success) {
         //optional: store the JWT in storage
         console.log("login Verified Successfully!")
+        this.isVerified = true;
       } else {
         console.log("Error has occured");
+        this.isVerified = false;
       }
     })
   }
