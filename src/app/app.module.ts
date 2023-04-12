@@ -6,12 +6,11 @@ import { HomeComponent } from './home/home.component';
 import { CraftComponent } from './craft/craft.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { LocationComponent } from './location/location.component';
-
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatButtonModule} from '@angular/material/button';
 import { MatStepperModule} from '@angular/material/stepper';
 import { MatFormFieldModule} from '@angular/material/form-field';
-import { MatCardModule} from '@angular/material/card';
+import {MatCardModule} from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { FormControl } from '@angular/forms';
 
@@ -35,7 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     InventoryComponent,
     LocationComponent,
     CraftComponent,
-    UpdateComponent
+    UpdateComponent,
   ],
   imports: [
     BrowserModule,

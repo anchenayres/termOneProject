@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {FormBuilder, Validators} from '@angular/forms';
-import { FormControl } from '@angular/forms';
+// import {FormBuilder, Validators} from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { VerifyService } from '../services/verify.service';
 
 @Component({
