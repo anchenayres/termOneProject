@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,8 +10,10 @@ import { LocationComponent } from './location/location.component';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatButtonModule} from '@angular/material/button';
 import { MatStepperModule} from '@angular/material/stepper';
-import { MatFormFieldModule} from '@angular/material/form-field';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
+
+import { MatCard } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { FormControl } from '@angular/forms';
 
@@ -39,21 +42,22 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule,
     AppRoutingModule,
+    HttpClientModule,
     MatToolbarModule,
     MatCardModule,
-    NgImageSliderModule,
-    ScrollingModule,
+    // ScrollingModule,
     MatButtonModule,
-    MatStepperModule,
+    // MatStepperModule,
     MatFormFieldModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatDialogModule,
-    FormControl,
+    // MatDialogModule,
   ],
   providers: [],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
