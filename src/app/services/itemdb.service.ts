@@ -21,6 +21,9 @@ export class ItemdbService {
    
   }
 
+
+  //get Africa only
+  
     //CREATE
     createNewItem(item: Item): Observable<Item> {
       return this.http.post<Item>(this.url, item)
@@ -35,8 +38,19 @@ export class ItemdbService {
     //UPDATE
     updateAmount(id: string, newAmount: number): Observable<Item> {
       return this.http.put<Item>(`${this.url}/${id}`, {availability: newAmount})
-
     }
+
+    //filter
+    // category = [
+    //   {id: '', category: "Africa"}, 
+    // ];
+  
+    // findNonAdults(id: any[]): any[] {
+    //   return id.filter(p => p.category == "Africa");
+    // }
+
+  
+
   
 
    

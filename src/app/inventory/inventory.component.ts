@@ -28,6 +28,7 @@ export class InventoryComponent {
     availability: new FormControl(20)
   })
 
+
   ngOnInit() {
     this.itemService.getAllItems().subscribe((data) => {
       console.log(data);
