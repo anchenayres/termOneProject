@@ -26,6 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 
 import { HttpClientModule } from '@angular/common/http';
+import { AuthOnlyDirective } from './directives/auth-only.directive';
 
 
 
@@ -38,6 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     LocationComponent,
     CraftComponent,
     UpdateComponent,
+    AuthOnlyDirective,
   ],
   imports: [
     BrowserModule,
