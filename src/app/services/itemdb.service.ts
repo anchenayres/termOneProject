@@ -45,13 +45,9 @@ export class ItemdbService {
       return this.http.put<Item>(`${this.url}/${id}`, {availability: newAmount})
     }
 
-    //filter
-    // category = [
-    //   {id: '', category: "Africa"}, 
-    // ];
-  
-    // findNonAdults(id: any[]): any[] {
-    //   return id.filter(p => p.category == "Africa");
+    // filter  
+    // findCountry(category: string): Observable<Item[]> {
+    //   return this.http.get<Item[]>(`${this.url}/${category}`)
     // }
 
   

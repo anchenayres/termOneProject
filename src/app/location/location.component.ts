@@ -1,33 +1,49 @@
 import { Component } from '@angular/core';
+import { Item } from '../models/item';
+import { ItemdbService } from '../services/itemdb.service';
+
 
 @Component({
   selector: 'app-location',
   templateUrl: './location.component.html',
-  styleUrls: ['./location.component.css']
+  styleUrls: ['./location.component.css'],
+  providers: [ItemdbService]
+
 })
 export class LocationComponent {
-  america=[
-    {
-      image: "https://cdn.shopify.com/s/files/1/0280/5548/products/Legado-Kenya-Kiamabara-Peaberry-250g_1024x1024.jpg?v=1664978064",
-      title: "Cedar - Colombia Felix Samboni Natural",
-      price: "R205,87",
-      size: "250g Total",
-      availability: "1096g",
-  },
-  {
-    image: "https://cdn.shopify.com/s/files/1/0280/5548/products/Truth-White-Bag-With-Clip-1024x1024_ecef9fd0-e305-4e5e-b64f-e71400c873fc_1024x1024.jpg?v=1665661221",
-    title: "Cedar - Colombia Felix Samboni Washed",
-    price: "R205,87",
-    size: "250g Total",
-    availability: "1096g",
-},
-  {
-    image: "https://cdn.shopify.com/s/files/1/0280/5548/products/Legado-Kenya-Kiamabara-Peaberry-250g_1024x1024.jpg?v=1664978064",
-    title: "Cedar - Nicaragua San Roman",
-    price: "R205,87",
-    size: "250g Total",
-    availability: "1096g",
-}
-]
+
+   constructor (private itemService: ItemdbService){
+  }
+
+    items: Item[] = []
+
+//   america=[
+//       {id: '', category: "Africa"}, 
+
+// ]
+// listOfAfrica: Item[] = [];
+
+
+// getAfrica() {
+//   this.items.getAllAfrica().subscribe((data) => {
+//     this.listOfBlends = data
+//   })
+// }
+
+// ngOnInit() {
+//   this.getBlend()
+// }
+
+  // ngOnInit() {
+  //   this.itemService.findCountry(category: String).subscribe((data) => {
+  //     console.log(data);
+  //     this.items = data
+  //   })
+
+
+  // }
+
+
+
 
 }

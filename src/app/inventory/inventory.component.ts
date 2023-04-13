@@ -35,6 +35,7 @@ export class InventoryComponent {
       this.items = data
     })
 
+    
   //beackend to call our service
 
 
@@ -79,4 +80,6 @@ createItem(){
     this.itemService.removeItem(id).subscribe();
     this.items.splice(index, 1);
   }
+
+  
 }
