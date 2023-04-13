@@ -12,10 +12,32 @@ import { Africa } from '../models/africa';
 })
 export class LocationComponent {
 
-   constructor (private itemService: ItemdbService){
+   constructor (private locationService: ItemdbService){
   }
 
-    africaList: Africa[] = [];
+    africa: Africa[] = [];
+
+  //   listOfAfrica: Africa[] = [];
+
+  // getAfrica() {
+  //   this.africa.get().subscribe((categoryValue) =>{
+  //     this.listOfAfrica = ca
+  //   })
+  // }
+
+     ngOnInit() {
+      this.locationService.getAllItems().subscribe((categoryValue) => {
+      console.log(categoryValue);
+      this.africa = categoryValue
+    });
+
+
+
+
+    
+
+
+  }
 
     // getAfrica() {
     //   this.africaList.africa().subscribe((data) => {
