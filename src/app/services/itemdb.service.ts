@@ -21,6 +21,11 @@ export class ItemdbService {
    
   }
 
+  // getAfrica(item: Item) {
+  //   var obj = this.items.filter
+  //   return this.http.get<Item[]>(this.url)
+  // }
+
 
   //get Africa only
   

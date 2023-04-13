@@ -28,14 +28,15 @@
         </mat-card>
     </div>
       
-      <div class="block">
-        <div class="homeItems" *ngFor="let category of items">
-      
+      <!-- <div class="block">
+        <div class="homeItems">
           <mat-card class="items">
-            
+            <form [formGroup]="formGroup">
+                <p-dropdown [options]="countries" [(ngModel)]="selectedCountry" placeholder="Select a Country" [editable]="true" optionLabel="country"></p-dropdown>
+            </form>
           </mat-card>
       </div>
-      </div>
+      </div> -->
       
     
 

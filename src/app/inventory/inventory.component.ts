@@ -35,6 +35,9 @@ export class InventoryComponent {
       this.items = data
     })
 
+  //beackend to call our service
+
+
     //this.items = this.itemService.getAllItems()
   }
 
