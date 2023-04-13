@@ -9,12 +9,16 @@ ul, li, a {
   }
 
 mat-toolbar {
-  background-color: #1B1A1A;
+  background-color: #2a2110;
   position: absolute;
-  width: 100%;
+  width: 98%;
   text-align: center;
   display: inline;
   padding-top: 2vh;
+  margin-top:2vh;
+  margin-left:2vh;
+
+  border-radius: 2vh;
 }
 
 /* .box {

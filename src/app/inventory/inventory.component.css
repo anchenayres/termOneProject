@@ -4,7 +4,9 @@ input {
     width: 150px;
 }
 
-
+p {
+    color: rgb(255, 255, 255);
+}
 
 input[type=submit]{
     background-color: rgb(209, 209, 209);
@@ -68,7 +70,7 @@ h3 {
     justify-content:flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    margin-top: 28vh;
+    margin-top: 23vh;
     margin-left: 9vh;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);

@@ -1,18 +1,41 @@
 <p>Location works!</p>
 
-    <h1>Single Origins</h1>
-    <h2>America</h2>
+   <h2>Africa</h2>
 
     <div class="homeItems" >
         <mat-card class="items" *ngFor="let item of africa" >
-            <img mat-card-image  class="imageLeft">
+            <img mat-card-image  class="imageLeft" [src]="item.image">
             <mat-card-title>{{item.title}}</mat-card-title>
             <mat-card-subtitle><strong>Origin: </strong>{{item.category}}</mat-card-subtitle>
             <mat-card-subtitle><strong>Primary Tastes: </strong>{{item.description}}</mat-card-subtitle>
             <mat-card-subtitle><strong>Total Availability:</strong> {{item.availability}}</mat-card-subtitle>
-            <button mat-raised-button routerLink="/update" class="updateButton">Update</button>
         </mat-card>
     </div>
+
+    <h2>America</h2>
+
+    <div class="homeItems" >
+        <mat-card class="items" *ngFor="let item of africa" >
+            <img mat-card-image  class="imageLeft" [src]="item.image">
+            <mat-card-title>{{item.title}}</mat-card-title>
+            <mat-card-subtitle><strong>Origin: </strong>{{item.category}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Primary Tastes: </strong>{{item.description}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Total Availability:</strong> {{item.availability}}</mat-card-subtitle>
+        </mat-card>
+    </div>
+
+    <h2>Asia</h2>
+
+    <div class="homeItems" >
+        <mat-card class="items" *ngFor="let item of africa" >
+            <img mat-card-image  class="imageLeft" [src]="item.image">
+            <mat-card-title>{{item.title}}</mat-card-title>
+            <mat-card-subtitle><strong>Origin: </strong>{{item.category}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Primary Tastes: </strong>{{item.description}}</mat-card-subtitle>
+            <mat-card-subtitle><strong>Total Availability:</strong> {{item.availability}}</mat-card-subtitle>
+        </mat-card>
+    </div>
+
 
     <!-- <h3>Africa</h3>
 

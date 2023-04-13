@@ -3,77 +3,40 @@
 <!--first need to verify -->
 
 <div appAuthOnly [isVerified]="!isVerified">
-  <p>Please verify yourself as a crafting user: </p>
+  <p>Please verify yourself as a blending user: </p>
   <input class="auth"  [formControl]="username" placeholder="username" type="text"/>
   <input class="auth2"  [formControl]="password" placeholder="password" type="password"/>
   <button  class="verify" (click)="checkVerification()">Verify</button>
 </div>
 
-<div appAuthOnly [isVerified]="!isVerified">
+<div appAuthOnly [isVerified]="isVerified">
   <h3>Hi {{username.value}} </h3>
+  
+  <div class="block">
+    <h2>Select which of the coffee bean combinations you would like to blend<h3 *ngIf="isBlending">Busy Blending ...</h3></h2>
+    <div class="homeItems">
+      <mat-card class="items" *ngFor="let blend of listOfBlends">
+          <img mat-card-image class="imageLeft" img src="assets/light2.webp">
+          <mat-card-title>{{blend.name}}</mat-card-title>
+          <mat-card-subtitle><strong>{{blend.description}}</strong></mat-card-subtitle>
+  
+  
+          <mat-card-subtitle *ngFor="let ingredients of blend.ingredients" ><strong></strong>
+          <span>{{ingredients.amountNeeded}}g of </span>
+          <span>{{ingredients.inventoryId.title}} </span>
+          <span>({{ingredients.inventoryId.availability}}g available)</span>
+          </mat-card-subtitle>
+  
+          <mat-card-subtitle><strong>Current Blends: {{blend.availability}}</strong></mat-card-subtitle>
+          <button (click)="blendRecipe(blend._id!)" [disabled]="isBlending" *ngIf="blend.craftable" mat-raised-button class="updateButton">Blend</button>
+          <button *ngIf="!blend.craftable" mat-raised-button color="disabled" class="updateButton">Missing Ingredients!</button>
+  
+      </mat-card>
+  </div>
+  </div>
+  
 </div>
 
 
-<div class="block">
-  <h2>Recently Blended <h3 *ngIf="isBlending">Busy Crafting ...</h3></h2>
-  <div class="homeItems">
-    <mat-card class="items" *ngFor="let blend of listOfBlends">
-        <img mat-card-image class="imageLeft" img src="assets/background.png">
-        <mat-card-title>{{blend.name}}</mat-card-title>
-        <mat-card-subtitle><strong>{{blend.description}}</strong></mat-card-subtitle>
 
 
-        <mat-card-subtitle *ngFor="let ingredients of blend.ingredients" ><strong></strong>
-        <span>{{ingredients.amountNeeded}}g of </span>
-        <span>{{ingredients.inventoryId.title}}g </span>
-        <span>({{ingredients.inventoryId.availability}}g available)</span>
-        </mat-card-subtitle>
-
-        <mat-card-subtitle><strong>Current Amount (g): {{blend.availability}}</strong></mat-card-subtitle>
-        <button (click)="blendRecipe(blend._id!)" [disabled]="isBlending" *ngIf="blend.craftable" mat-raised-button color="accent" class="updateButton">Blend</button>
-        <button *ngIf="!blend.craftable" mat-raised-button color="disabled" class="updateButton">Missing Ingredients</button>
-
-    </mat-card>
-</div>
-</div>
-
-
-<!-- <div class="block2"> -->
-  <!-- <mat-stepper orientation="vertical">
-    <mat-step>
-      <ng-template matStepLabel>Step 1</ng-template>
-      <ng-template matStepContent>
-        <p>Pick the location where you want to create a new blend</p>
-        <button mat-button matStepperNext>Next</button>
-      </ng-template>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Step 2</ng-template>
-      <ng-template matStepContent>
-        <p>Pick your base bean</p>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
-      </ng-template>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Step 3</ng-template>
-      <p>Measure out the base bean (g)</p>
-      <button mat-button matStepperPrevious>Back</button>
-    </mat-step>
-    <mat-step>
-        <ng-template matStepLabel>Step 4</ng-template>
-        <p>Pick your second bean</p>
-        <button mat-button matStepperPrevious>Back</button>
-      </mat-step>
-      <mat-step>
-        <ng-template matStepLabel>Step 5</ng-template>
-        <p>Measure out the second bean (g)</p>
-        <button mat-button matStepperPrevious>Back</button>
-      </mat-step>
-      <mat-step>
-        <ng-template matStepLabel>Step 6</ng-template>
-        <p>Bean Selection 2</p>
-        <button mat-button matStepperPrevious>Back</button>
-      </mat-step>
-  </mat-stepper> -->
-<!-- </div> -->
