@@ -1,16 +1,19 @@
 input {
     border-radius: 4vh;
-    padding: 10px;
+    padding: 15px;
     width: 150px;
 }
 
 
 
 input[type=submit]{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    width: 150px;
+    background-color: rgb(209, 209, 209);
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
 }
 
 
@@ -88,19 +91,24 @@ h3 {
 
 .addItem {
     /* width: 190vh; */
-    width: 70vh;
-    display: flex;
+    width: 30vh;
+    display:flex;
     height: 58vh;
-    flex-direction:column;
-    margin-left: 135vh;
+    flex-direction: column;
+    margin-left: 9vh;
+    margin-top: 5vh;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
 }
 
 h4 {
-    margin-top: 2vh;
+    margin-top: 5vh;
+    margin-left: 10vh;
+
 }
+
 form input{
+    color: black;
     margin-top: 2vh;
     margin-left: 2vh;
     display: flex;
@@ -108,15 +116,12 @@ form input{
     height: 1vh;
     border-radius: 10px;
     border-style: none;
-    background-color: rgb(219, 204, 183);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
 }
+
 
 form label {
     margin-left: 2vh;
-}
-
-.submitButton {
-    margin-left: 20vh;
 }
 
 mat-form-field input{
@@ -169,6 +174,7 @@ mat-card-subtitle {
 
 
 
+
 /* .homeItems2 {
     width: 195vh;
     display: flex;
@@ -182,17 +188,16 @@ mat-card-subtitle {
   
     
 } */
-
-/* .items2 {
+/* 
+.items{
     background: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-    max-width: 25vh;
+    max-width: 50vh;
+    flex: content;
+    flex-direction: row;
     height: 50vh;
     margin-left: 3vh;
     padding: 2vh;
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    transition: all 0.2s;
 } */
 
 
