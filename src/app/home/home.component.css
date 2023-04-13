@@ -9,6 +9,9 @@ ng-image-slider {
 
 }
 
+.cover {
+  position: absolute;
+}
 .container {
     position: relative;
     text-align: center;
