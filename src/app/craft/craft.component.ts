@@ -28,16 +28,16 @@ export class CraftComponent {
   isBlending = false //preloader
 
   checkVerification() {
-    // this.verify.checkVerification(this.username.value!, this.password.value!).subscribe((response) =>{
-    //   if(response.success) {
-    //     //optional: store the JWT in storage
-    //     console.log("login Verified Successfully!")
-    //     this.isVerified = true;
-    //   } else {
-    //     console.log("Error has occured");
-    //     this.isVerified = false;
-    //   }
-    // })
+    this.verify.checkVerification(this.username.value!, this.password.value!).subscribe((response) =>{
+      if(response.success) {
+        //optional: store the JWT in storage
+        console.log("login Verified Successfully!")
+        this.isVerified = true;
+      } else {
+        console.log("Error has occured");
+        this.isVerified = false;
+      }
+    })
   }
 
   getBlend() {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Item } from '../models/item';
 import { ItemdbService } from '../services/itemdb.service';
+import { Africa } from '../models/africa';
 
 
 @Component({
@@ -15,8 +15,18 @@ export class LocationComponent {
    constructor (private itemService: ItemdbService){
   }
 
-    items: Item[] = []
+    africaList: Africa[] = [];
 
+    // getAfrica() {
+    //   this.africaList.africa().subscribe((data) => {
+    //     this.getAfrica = data
+    //   })
+    // }
+  
+    // ngOnInit() {
+    //   this.getAfrica()
+    // }
+  
 //   america=[
 //       {id: '', category: "Africa"}, 
 
