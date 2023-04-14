@@ -11,7 +11,7 @@
 <!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Anchen Ayres</h5>
 <h5 align="center" style="padding:0;margin:0;">21100284</h5>
-<h6 align="center">DV300 - Term 1 | 2023</h6>
+<h6 align="center">DV300 - Term 1, Coffee Beans | 2023</h6>
 </br>
 <p align="center">
 
@@ -22,7 +22,7 @@
   <h3 align="center">Coffee Beans</h3>
 
   <p align="center">
-  In term 3 we had to create a mock ecommerce website which consisted of both client side functionality (front end) and server side functionality (back end)  with a specific niche towards the project. We made use of MERN stack with a specific focus on Node.js, Express.js and MongoDB. 
+  An Interactive web application which manages an inventory for single origin Coffee Beans.
 <br>
     
    <br />
@@ -46,13 +46,12 @@
   - [How to install](#how-to-install)
   - [Installation](#installation)
 - [Features and Functionality](#features-and-functionality)
-  - [See all lastest and discounted products on this page!](#see-all-lastest-and-discounted-products-on-this-page)
-  - [Feature 2](#feature-2)
-  - [Feature 3](#feature-3)
+  - [Inventory / Stock Page](#inventory--stock-page)
+  - [Blend / Craft Page](#blend--craft-page)
+  - [Location Page](#location-page)
 - [Concept Process](#concept-process)
   - [Ideation](#ideation)
   - [Wireframes](#wireframes)
-  - [Custom UI](#custom-ui)
 - [Development Process](#development-process)
   - [Implementation Process](#implementation-process)
     - [Highlights](#highlights)
@@ -65,7 +64,6 @@
 - [Authors](#authors)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!--PROJECT DESCRIPTION-->
 ## About the Project
@@ -75,12 +73,14 @@
 
 ### Project Description
 
-In term 3 we had to create a mock ecommerce website which consisted of both client side functionality (front end) and server side functionality (back end)  with a specific niche towards the project. We made use of MERN stack with a specific focus on Node.js, Express.js and MongoDB. 
+Website users are not aware (or do not care) that the information displayed originates from a database. Users simply want to search, post, or order. Therefore, this term we were required to create an interactive web application to manage an inventory. We were required to use Typescript to create the MEAN Stack application to track and craft new items.  
 
 ### Built With
 
 * [React](https://reactjs.org/)
-* [Axios](https://api.le-systeme-solaire.net/rest/bodies/)
+* [Node](https://nodejs.org/en/)
+* [MongoDB](https://www.mongodb.com/)
+* [Angular] (https://angular.io/)
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
@@ -110,10 +110,17 @@ Run the following in the command-line to clone the project:
 3. Install Dependencies </br>
 Run the following in the command-line to install all the required dependencies:
    ```sh
-   npm install
+   npm install / npm i
    ```
 
 4. An API key is not required
+
+5. Ensure that Nodemon, Typescript, Angular and Mongo are installed as dependancies   </br>
+
+6. Place "dev" in package.json and to start the back end run the following in your terminal (ensure that code is running on port 4200) </br>
+   ```sh
+   npm run dev 
+   ```
 
 
 <!-- FEATURES AND FUNCTIONALITY-->
@@ -121,26 +128,21 @@ Run the following in the command-line to install all the required dependencies:
 ## Features and Functionality
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
-![image2](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/home3.png)
-
-### See all lastest and discounted products on this page! 
-
-This page showcases a slider with an introduction of the Web store COLLAR CITY. Beneath the introduction is a Latest Products section and a Discounted Products section which provides the user with information regarding that product. Each product has a unique name which is the name of the dog showcasing the product in the imagery, it makes it easier to differentiate between the products.
 
 
-### Feature 2
+### Inventory / Stock Page
 
-These are all the products available on this web store. They are all divided into sections depending on what type of product it is such as a Flat Collar or a Smart Collar.  Each product has a unique name which is the name of the dog showcasing the product in the imagery, it makes it easier to differentiate between the products. There is also a small description of the product with the price, enlarged view and how many of those items are in stock.
-
-![image3](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/products.png)
-### Feature 3
-
-This page showcases the individual product selected in the View Button on the Products and Home Page. It will showcase an enlarged view with various angled imagery and a description. There is also a place to select the specific information needed for the user's purchases. You can add this item to the cart of simply proceed directly to the checkout. 
+The inventory section showcases all the items from the data in MongoDB. The user is able to switch between the inventory from each location (the origin of the coffee beans). The user is also able to add a new item to the inventory list, delete an item and uodate the amount for each item.
 
 
-![image4](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/individual.png)
+### Blend / Craft Page
+
+This page alows users to blend new coffee combinations from two single origin coffee beans from the same location. In order to do this, there is a verification method to ensure that to ensure that this is indeed the user's web application and thereafter they are able to blend. Once a recipe has been blended the amount available will update in the database and will indicate whether there is enough ingredients (g) available for the specific blend.
 
 
+### Location Page
+
+It showcases all the items from the MongoDB filtered by their origins (locations). Users are able to view the information.
 
 
 <!-- CONCEPT PROCESS -->
@@ -151,52 +153,32 @@ This page showcases the individual product selected in the View Button on the Pr
 The `Conceptual Process` is the set of actions, activities and research that was done when starting this project. For the conceptual process Pinterest was my best friend. I used this app to save all my ideas and explorations around specific UI Designs. I also watched YouTube videos of people creating various dashboards in javascript.
 
 ### Ideation
-
-![image5](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/inspo.jpeg)
-
 ### Wireframes
 
-### Custom UI
-
-<!-- DEVELOPMENT PROCESS -->
+As part of the ideation process, Figma helped the wireframing process as it was a crucial part to determining all the important information for the project and to ensure that everything is displayed in a creative yet functional manner.
 ## Development Process
 
 The `Development Process` is the technical implementations and functionality done in the frontend and backend of the application.
 
 ### Implementation Process
-<!-- stipulate all of the functionality you included in the project -->
-<!-- This is your time to shine, explain the technical nuances of your project, how did you achieve the final outcome!-->
-
-* Implemented Routing with `React-Router v6`.
-* ETC.
-
 #### Highlights
-<!-- stipulated the highlight you experienced with the project -->
-* Due to my project not working with regards to server-side  functionality, I would have to say there are not as many highlights as there were challenges. The overall look of the website was not that bad and did look aesthetically pleasing but it was definitely not the point of this brief. 
 
-
+* I really enjoyed the complexity of this project, although I feel the project can be pushed further, I have done a lot and I am proud of the project as a whole. This project has definetly been my favorite project that I've done and I hope to improve it.
+* Learning how to incorporate Angular with Typescript into this project was definitely a highlight.
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-* This was an exceptionally difficult term for me personally. I struggled to keep up with the workload with other subjects and with all the errors I faced within this project definitely brought me down a bit.  The error which kept occurring within this project was [nodemon] app crashed,  and I was unable to load my products from Insomnia to MongoDB which really set me back. I did have a contact session in order to fix this issue as I wasn’t able to but as soon as it was fixed and I tried it on my own again, it did not work. This was also an issue which led to my server not opening up and then I wasn’t able to see what I was changing on my website. This was not at all the way I wanted this term to end but I will keep my head up and try even harder next term because this is a really enjoyable subject and If I just spend more time on fixing my mistakes and asking when help is needed, I will succeed.
-
-
+* One of my largest challenges in this project was considering how all the required fields were going to be laid out, this was more of a front end issue.  
+  
 #### Above And Beyond
-
-What aspects of this final build contribute to the `Above And Beyond` Component of your brief?
-<!-- what did you learn outside of the classroom and implement into your project-->
-
-
 ### Future Implementation
-<!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* I would focus on my time management and spreading out my work load throughout the term instead of stressing about functionalities not working as they should last minute
+* Definitely focus on the frontend of the project.
+* Incorporate a filter option for the inventory page and the location page.
+* Use JWT authentication
 
-<!-- MOCKUPS -->
 ## Final Outcome
 
 ### Mockups
-
-![image6](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/checkout.png)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
@@ -211,7 +193,7 @@ See the [open issues](https://github.com/anchenayres/termOneProject/issues) for 
 <!-- AUTHORS -->
 ## Authors
 
-* **Your Name & Surname** - [anchenayres](https://github.com/anchenayres)
+* **Anchen & Ayres** - [anchenayres](https://github.com/anchenayres)
 
 <!-- LICENSE -->
 ## License
@@ -221,16 +203,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- LICENSE -->
 ## Contact
 
-* **Your Name & Surname** - [email@address](mailto:email@address) - [@instagram_handle](https://www.instagram.com/instagram_handle/) 
-* **Project Link** - https://github.com/anchenayres/term3-project
+* **Anchen & Ayres** - [21100284@virtualwindow.co.za](mailto:email@address)
+* **Project Link** - https://github.com/anchenayres/termOneProject
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-<!-- all resources that you used and Acknowledgements here -->
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
-* [Resource Name](path/to/resource)
 
 
