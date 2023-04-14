@@ -3,7 +3,7 @@
 <!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/anchenayres/termOneProject.git)
+![GitHub repo size](https://img.shields.io/github/repo-size/anchenayres/termOneProject)
 ![GitHub watchers](https://img.shields.io/github/watchers/anchenayres/termOneProject)
 ![GitHub language count](https://img.shields.io/github/languages/count/anchenayres/termOneProject)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/anchenayres/termOneProject)
