@@ -69,8 +69,6 @@
 ## About the Project
 
 <!-- header image of project -->
-![image1](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/home.png)
-
 ### Project Description
 
 Website users are not aware (or do not care) that the information displayed originates from a database. Users simply want to search, post, or order. Therefore, this term we were required to create an interactive web application to manage an inventory. We were required to use Typescript to create the MEAN Stack application to track and craft new items.  
