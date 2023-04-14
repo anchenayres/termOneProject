@@ -3,23 +3,23 @@
 <!-- Repository Information & Links-->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/anchenayres/term3-project.git)
-![GitHub watchers](https://img.shields.io/github/watchers/anchenayres/term3-project)
-![GitHub language count](https://img.shields.io/github/languages/count/anchenayres/term3-project)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/anchenayres/term3-project)
+![GitHub repo size](https://img.shields.io/github/repo-size/anchenayres/termOneProject.git)
+![GitHub watchers](https://img.shields.io/github/watchers/anchenayres/termOneProject)
+![GitHub language count](https://img.shields.io/github/languages/count/anchenayres/termOneProject)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/anchenayres/termOneProject)
 
 <!-- HEADER SECTION -->
 <h5 align="center" style="padding:0;margin:0;">Anchen Ayres</h5>
 <h5 align="center" style="padding:0;margin:0;">21100284</h5>
-<h6 align="center">DV200 - Term 3 | 2022</h6>
+<h6 align="center">DV300 - Term 1 | 2023</h6>
 </br>
 <p align="center">
 
-  <a href="https://github.com/anchenayres/term3-project.git">
+  <a href="https://github.com/anchenayres/termOneProject.git">
     <img src="/client/src/Images/logo.png" width="200" height="200" border-radius="50%">
   </a>
   
-  <h3 align="center">Collar City</h3>
+  <h3 align="center">Coffee Beans</h3>
 
   <p align="center">
   In term 3 we had to create a mock ecommerce website which consisted of both client side functionality (front end) and server side functionality (back end)  with a specific niche towards the project. We made use of MERN stack with a specific focus on Node.js, Express.js and MongoDB. 
@@ -29,9 +29,9 @@
    <br />
    <a href="path/to/demonstration/video">View Demo</a>
     ·
-    <a href="https://github.com/anchenayres/term3-project/issues">Report Bug</a>
+    <a href="https://github.com/anchenayres/termOneProject/issues">Report Bug</a>
     ·
-    <a href="https://github.com/anchenayres/term3-project/issues">Request Feature</a>
+    <a href="https://github.com/anchenayres/termOneProject/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
@@ -71,7 +71,7 @@
 ## About the Project
 
 <!-- header image of project -->
-![image1](https://github.com/anchenayres/term3-project/blob/main/client/src/Images/home.png)
+![image1](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/home.png)
 
 ### Project Description
 
@@ -98,12 +98,12 @@ Ensure that you have the latest version of [NPM](https://www.npmjs.com/) install
 Here are a couple of ways to clone this repo:
 
 1. GitHub Desktop </br>
-Enter `https://github.com/anchenayres/term3-project.git` into the URL field and press the `Clone` button.
+Enter `https://github.com/anchenayres/termOneProject.git` into the URL field and press the `Clone` button.
 
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/anchenayres/term3-project.git
+   git clone https://github.com/anchenayres/termOneProject.git
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
@@ -121,7 +121,7 @@ Run the following in the command-line to install all the required dependencies:
 ## Features and Functionality
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
-![image2](https://github.com/anchenayres/term3-project/blob/main/client/src/Images/home3.png)
+![image2](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/home3.png)
 
 ### See all lastest and discounted products on this page! 
 
@@ -132,13 +132,13 @@ This page showcases a slider with an introduction of the Web store COLLAR CITY. 
 
 These are all the products available on this web store. They are all divided into sections depending on what type of product it is such as a Flat Collar or a Smart Collar.  Each product has a unique name which is the name of the dog showcasing the product in the imagery, it makes it easier to differentiate between the products. There is also a small description of the product with the price, enlarged view and how many of those items are in stock.
 
-![image3](https://github.com/anchenayres/term3-project/blob/main/client/src/Images/products.png)
+![image3](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/products.png)
 ### Feature 3
 
 This page showcases the individual product selected in the View Button on the Products and Home Page. It will showcase an enlarged view with various angled imagery and a description. There is also a place to select the specific information needed for the user's purchases. You can add this item to the cart of simply proceed directly to the checkout. 
 
 
-![image4](https://github.com/anchenayres/term3-project/blob/main/client/src/Images/individual.png)
+![image4](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/individual.png)
 
 
 
@@ -152,7 +152,7 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 
-![image5](https://github.com/anchenayres/term3-project/blob/main/client/src/Images/inspo.jpeg)
+![image5](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/inspo.jpeg)
 
 ### Wireframes
 
@@ -196,7 +196,7 @@ What aspects of this final build contribute to the `Above And Beyond` Component 
 
 ### Mockups
 
-![image6](https://github.com/anchenayres/term3-project/blob/main/client/src/Images/checkout.png)
+![image6](https://github.com/anchenayres/termOneProject/blob/main/client/src/Images/checkout.png)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
@@ -206,7 +206,7 @@ To see a run through of the application, click below:
 <!-- [View Demonstration](https://github.com/anchenayres/term3-project/blob/main/src/Images/demo.mov) -->
 
 
-See the [open issues](https://github.com/anchenayres/term3-project/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/anchenayres/termOneProject/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 ## Authors
