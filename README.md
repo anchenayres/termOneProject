@@ -16,7 +16,6 @@
 <p align="center">
 
   <a href="https://github.com/anchenayres/termOneProject.git">
-    <img src="/client/src/Images/logo.png" width="200" height="200" border-radius="50%">
   </a>
   
   <h3 align="center">Coffee Beans</h3>
