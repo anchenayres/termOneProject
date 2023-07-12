@@ -17,7 +17,8 @@ export class CraftComponent {
   constructor (private verify: VerifyService, private blend: BlendService) {}
 
   //is our user verified
-  isVerified = false;
+  //set to false, use true to showcase due to error
+  isVerified = true;
 
   //form controls
   username = new FormControl("");
